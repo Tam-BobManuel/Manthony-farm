@@ -59,6 +59,12 @@ function Shop() {
     updateCartItems(newCartItems);
   };
 
+  const reloadPageWithScrollPosition = () => {
+    const scrollPosition = window.scrollY;
+    window.location.reload();
+    window.scrollTo(0, scrollPosition);
+  };
+
   const filteredItems = items.filter((item: Item) => {
     if (!searchQuery) {
       return true;
@@ -109,16 +115,14 @@ function Shop() {
                 <Text fontSize="xl" fontWeight="bold">
                   ₦ {item.price.toLocaleString()}
                 </Text>
-                <a href="/shop">
-                  {" "}
-                  <Button
-                    onClick={() => {
-                      addToCart(item.id);
-                    }}
-                  >
-                    Add to Cart
-                  </Button>
-                </a>
+                <Button
+                  onClick={() => {
+                    addToCart(item.id);
+                    reloadPageWithScrollPosition();
+                  }}
+                >
+                  Add to Cart
+                </Button>
               </Box>
             </Box>
           ))
