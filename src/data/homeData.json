@@ -1,0 +1,40 @@
+{
+  "images": [
+    "https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1604272451012-c1928e953064?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1624979316584-3fe603c644cd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  ],
+  "textOverlays": [
+    "Welcome to Manthony Farm",
+    "We have chickens for sale",
+    "We also have eggs for sale!",
+    "we have goats as well!"
+  ],
+    "explainText": [
+      {
+        "text": "At our farm, we prioritize the well-being of our chickens above all else. As a chicken-first farm, we specialize in the ethical production of premium-quality chicken eggs and chicken. Operating on a small scale allows us to maintain the highest standards of care and attention to detail, ensuring that every aspect of our operation reflects our commitment to excellence. From the moment our chicks hatch, they are provided with a nurturing environment and access to natural resources essential for their growth and vitality. We meticulously tend to every aspect of their well-being, from nutrition and health to housing and environment. We take pride in our hands-on approach, ensuring that each chicken is raised in accordance with humane and sustainable practices. By prioritizing quality over quantity, we guarantee that every egg and chicken that leaves our farm is of the utmost freshness and flavor. At manthony farm, we believe in transparency and integrity in everything we do. That's why we invite you to experience firsthand the care and dedication that goes into every product we offer. Join us on our journey toward sustainable agriculture and discover the difference that conscientious farming makes.",
+        "button": {
+          "text": "Shop",
+          "link": "/shop"
+        }
+      },
+      {
+        "text": "At our farm, we prioritize the well-being of our chickens above all else. As a chicken-first farm, we specialize in the ethical production of premium-quality chicken eggs and meat. Operating on a small scale allows us to maintain the highest standards of care and attention to detail, ensuring that every aspect of our operation reflects our commitment to excellence. From the moment our chicks hatch, they are provided with a nurturing environment and access to natural resources essential for their growth and vitality. We take pride in our hands-on approach, ensuring that each chicken is raised in accordance with humane and sustainable practices. By prioritizing quality over quantity, we guarantee that every produce that leaves our farm is of the utmost freshness and flavor. At Manthony Farm, we believe in transparency and integrity in everything we do. That's why we invite you to experience firsthand the care and dedication that goes into every product we offer. Join us on our journey toward sustainable agriculture and discover the difference that conscientious farming makes."
+      },
+      {
+        "text": "At our farm, our passion lies in the gentle care of poultry and goats. From the bustling cluck of our hens to the playful frolics of our goats, every creature is cherished as a vital part of our family. Nestled amidst fields of green and patches of golden sun, we invite you to explore our world of feathered friends and bleating companions. With every step, you'll discover the richness of our commitment to quality and sustainability. So, if you seek the finest in poultry and goat products, look no further. Join us on our journey as we proudly offer the fruits of our labor, born from a deep respect for the land and the animals it nurtures. ",
+        "button": {
+          "text": "Contact Us",
+          "link": "/contactTam"
+        }
+      }
+    ],
+  "aboutUsImages": [
+    "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1533234944761-2f5337579079?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  ],
+  "aboutUsImagePositions": ["right", "left", "right"],
+  "aboutUsHeadings": ["About Us","Our Standards", "Contact Us"]
+}

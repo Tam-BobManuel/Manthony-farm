@@ -1,0 +1,49 @@
+:root{
+    --Blue-Dark-Mode-Elements: hsl(209, 23%, 22%);
+    --Very-Dark-Blue-Dark-Mode-Background: hsl(207, 26%, 17%);
+    --Very-Dark-Blue-Light-Mode-Text: hsl(200, 15%, 8%);
+    --Dark-Gray-Light-Mode-Input: hsl(0, 0%, 52%);
+    --Very-Light-Gray-Light-Mode-Background: hsl(0, 0%, 98%);
+    --White-Dark-Mode-Text-Light-Mode-Elements: hsl(0, 0%, 100%)
+  }
+  
+  @font-face {
+    font-family: "nunitoSans";
+    src: url(https://fonts.google.com/specimen/Nunito+Sans)format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "nunitoSans";
+    src: url(https://fonts.google.com/specimen/Nunito+Sans)format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "nunitoSans";
+    src: url(https://fonts.google.com/specimen/Nunito+Sans)format("truetype");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  
+  
+  #root {
+    width: 100% !important;
+    padding: 0%;
+    margin: 0%; 
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "nunitoSans";
+    padding: 0%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  h1{
+    font-weight: 800;
+  }
+  
+  p,span,text,Text{
+    font-weight: 300;
+  }
