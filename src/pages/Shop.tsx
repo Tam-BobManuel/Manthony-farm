@@ -60,9 +60,8 @@ function Shop() {
   };
 
   const reloadPageWithScrollPosition = () => {
-    const scrollPosition = window.scrollY;
-    window.location.reload();
-    window.scrollTo(0, scrollPosition);
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    window.location.href = `${window.location.pathname}?scroll=${scrollPosition}`;
   };
 
   const filteredItems = items.filter((item: Item) => {
