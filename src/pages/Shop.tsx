@@ -27,7 +27,7 @@ interface User {
 }
 
 function Shop() {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<User | undefined>(undefined);
   const [searchQuery, setSearchQuery] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
@@ -104,7 +104,7 @@ function Shop() {
               overflow="hidden"
               m="4"
             >
-              <Image src={item.image} alt={item.name + " image"} />
+              <Image src={item.image} alt={`item.name " image"`} />
               <Box p="6" textAlign="center">
                 <Text fontWeight="semibold" fontSize="lg" mb="2">
                   {item.name}
