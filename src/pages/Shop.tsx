@@ -55,8 +55,12 @@ function Shop() {
   }
 
   const addToCart = (itemId: number) => {
-    const newCartItems = [...cartItems, itemId];
-    updateCartItems(newCartItems);
+    if (cartItems) {
+      const newCartItems = [...cartItems, itemId];
+      updateCartItems(newCartItems);
+    } else {
+      console.error("cartItems is undefined");
+    }
   };
 
   const reloadPageWithScrollPosition = () => {
