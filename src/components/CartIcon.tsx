@@ -2,9 +2,14 @@ import { FaShoppingBasket } from "react-icons/fa";
 import { IconButton, Box, Text, HStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { cartItems } from "../hooks/cartData";
+import { useState, useEffect } from "react";
 
 function CartIcon() {
-  const itemValue = cartItems.length;
+  const [itemValue, setItemValue] = useState(cartItems.length);
+
+  useEffect(() => {
+    setItemValue(cartItems.length);
+  }, [cartItems]);
 
   return (
     <Box>
