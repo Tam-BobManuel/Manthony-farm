@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import type React from "react";
+import { useState, useEffect } from "react";
 import { Box, Text, Button, Image, Input, SimpleGrid } from "@chakra-ui/react";
 import items from "../data/shopData.json";
 import { cartItems, updateCartItems } from "../hooks/cartData";
@@ -27,6 +28,7 @@ const Checkout: React.FC = () => {
 
     // Count the occurrences of each item ID in the cart
     const updatedItemCounts: { [key: number]: number } = {};
+    // biome-ignore lint/complexity/noForEach: <explanation>
     cartItems.forEach((itemId) => {
       updatedItemCounts[itemId] = (updatedItemCounts[itemId] || 0) + 1;
     });
@@ -64,7 +66,7 @@ const Checkout: React.FC = () => {
   };
   const updateCartWithQuantity = (itemId: number, quantity: number) => {
     // Create a copy of the cart items array
-    let updatedCartItems = [...cartItems];
+    const updatedCartItems = [...cartItems];
 
     // Find the existing quantity of the item in the cart
     const existingQuantity = updatedCartItems.filter(
@@ -114,8 +116,8 @@ const Checkout: React.FC = () => {
     itemId: number,
     e: React.FocusEvent<HTMLInputElement>
   ) => {
-    const newQuantity = parseInt(e.target.value);
-    if (!isNaN(newQuantity)) {
+    const newQuantity = Number.parseInt(e.target.value);
+    if (!Number.isNaN(newQuantity)) {
       updateQuantity(itemId, newQuantity);
     }
   };
@@ -157,7 +159,7 @@ const Checkout: React.FC = () => {
               >
                 <Image
                   src={item.image}
-                  alt={item.name + " image"}
+                  alt={`${item.name} image`}
                   width={"100%"}
                 />
                 <Box p={4} m={"auto"} textAlign={"center"}>
@@ -175,7 +177,7 @@ const Checkout: React.FC = () => {
                     onClick={() => {
                       removeFromCart(item.id);
                       updateQuantity(item.id, itemCounts[item.id] - 1);
-                      window.location.reload();
+                      // window.location.reload();
                     }}
                   >
                     -
@@ -184,8 +186,8 @@ const Checkout: React.FC = () => {
                     type="number"
                     placeholder={itemCounts[item.id].toString()}
                     onChange={(e) => {
-                      const newQuantity = parseInt(e.target.value);
-                      if (!isNaN(newQuantity)) {
+                      const newQuantity = Number.parseInt(e.target.value);
+                      if (!Number.isNaN(newQuantity)) {
                         updateCartWithQuantity(item.id, newQuantity);
                         updateQuantity(item.id, newQuantity);
                       }
@@ -193,7 +195,7 @@ const Checkout: React.FC = () => {
                     onBlur={(e) => {
                       handleBlur(item.id, e);
 
-                      window.location.reload();
+                      // window.location.reload();
                     }}
                     min={0}
                     max={99}
@@ -203,7 +205,7 @@ const Checkout: React.FC = () => {
                     onClick={() => {
                       addToCart(item.id);
                       updateQuantity(item.id, itemCounts[item.id] + 1);
-                      window.location.reload();
+                      // window.location.reload();
                     }}
                   >
                     +
@@ -225,7 +227,7 @@ const Checkout: React.FC = () => {
               colorScheme="red"
               onClick={() => {
                 removeAllItems();
-                window.location.reload();
+                // window.location.reload();
               }}
             >
               Remove All Items

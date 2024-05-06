@@ -63,11 +63,11 @@ function Shop() {
     }
   };
 
-  const reloadPageWithScrollPosition = () => {
-    const scrollPosition = window.scrollY;
-    window.location.reload();
-    window.scrollTo(0, scrollPosition);
-  };
+  // const reloadPageWithScrollPosition = () => {
+  //   const scrollPosition = window.scrollY;
+  //   window.location.reload();
+  //   window.scrollTo(0, scrollPosition);
+  // };
 
   const filteredItems = items.filter((item: Item) => {
     if (!searchQuery) {
@@ -122,7 +122,7 @@ function Shop() {
                 <Button
                   onClick={() => {
                     addToCart(item.id);
-                    reloadPageWithScrollPosition();
+                    // reloadPageWithScrollPosition();
                   }}
                 >
                   Add to Cart
