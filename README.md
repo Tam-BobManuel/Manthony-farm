@@ -18,26 +18,6 @@ Welcome to the Farm Site project! This is a frontend web application built with 
 - **React:** JavaScript library for building user interfaces.
 - **Local Storage, JSON, and Session Storage:** Simulate a database for storing user and product data.
 
-## Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/farm-site.git
-   ```
-
-2. Install dependencies
-
-```cd farm-site
-npm install
-```
-
-3. Start the development server:
-
-```npm run dev
-
-```
-
 # Contact
 
 For any inquiries or feedback, feel free to reach out:
